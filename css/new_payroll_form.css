@@ -1,12 +1,14 @@
+/*Defining Properties of Contents in body*/
 body{
     margin: 0;
     height: 100%;
 }
+/*Defining Properties of header row*/
 .header{
     padding: 15px 0;
     background-color: white;
 }
-
+/*Defining Properties Contents present in Header*/
 .header-content{
     display: flex;
     flex-direction: row;
@@ -41,6 +43,7 @@ body{
     align-items: center;
     border: 0px solid green;
 }
+/*Defining Properties pf Form section*/
 .form{
     width: 65%;
     padding: 44px 60px;
@@ -50,6 +53,7 @@ body{
     border-radius: 8px;
     opacity: 1;
 }
+/*Defining Properties of foem heading properties*/
 .form-head{
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
@@ -58,7 +62,7 @@ body{
     opacity: 1;
     padding-bottom: 20px;
 }
-
+/*Giving  Properties of row-content Elements*/
 .row-content{
     display: flex;
     flex-direction: row;
@@ -86,6 +90,7 @@ label{
     border-radius: 4px;
     resize: vertical;
 }
+/* Giving Properties of Selecting Profile Picture Row*/
 .profile-radio-content{
     display: flex;
     flex-direction: row;
@@ -99,4 +104,16 @@ label{
     width: 40px;
     border-radius: 50%;
     margin-left: 12px;
+}
+
+/* Giving  properties of Date Selecting Row*/
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    color: #42515f;
+    background-color: transparent;
 }
