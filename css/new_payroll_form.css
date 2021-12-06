@@ -150,6 +150,15 @@ select{
 .cancelButton{
     text-decoration: none;
     text-align: center;
+    border: none;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+}
+/*CSS Code to modify reset button*/
+.resetButton{
+    border: none;
+    background-color: #f5f5f5;
+    margin-right: 30px;
 }
 /*Writing Media Queries */
 
