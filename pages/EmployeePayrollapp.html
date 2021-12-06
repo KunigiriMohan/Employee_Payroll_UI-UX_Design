@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/new_payroll_form.css">
         <title>Employee Payroll</title>
         <script defer src="../js/new_payroll_form.js"></script>
+        <script defer src="../js/EmployeePayroll.js"></script>
     </head>
     <!--UC1 Adding Header Content-->
     <body>
@@ -18,6 +19,7 @@
             <span class="emp-text emp-payroll">Payroll</span>
          </div>
         </div>
+        
         </header>
         <!--UC2 Adding form Content-->
         <div class="form-content">
@@ -26,6 +28,7 @@
                 <div class="row-content">
                     <label class="label text" for="name">Name</label>
                     <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
+                    <error-output class="text-error" for="text"></error-output>
                 </div>
                 <!--creating Div class for adding profile picture of Employee-->
                 <div class="row-content">
