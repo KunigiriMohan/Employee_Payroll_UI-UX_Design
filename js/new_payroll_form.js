@@ -1,6 +1,21 @@
 
 window.addEventListener('DOMContentLoaded',(event)=>{
-const salary= document.querySelector('#salary');                        //Event Handler to update value when we scroll salary column
+    const name=document.querySelector('#name');
+    const textError = document.querySelector('.text-error');
+    name.addEventListener('input',function(){
+        if(name.value.length == 0){
+            textError.textContent="";
+            return;
+        }
+        try{                                                                //Try catch block to catch error thrown when name entered is according to regex.
+            (new EmployeePayrollData()).name=name.value;;
+            textError.textContent="";
+        }
+        catch(e){
+            textError.textContent=e;
+        }
+    });
+    const salary= document.querySelector('#salary');                        //Event Handler to update value when we scroll salary column
     const output =document.querySelector('.salary-output');
 
     output.textContent=salary.value;
@@ -8,6 +23,7 @@ const salary= document.querySelector('#salary');                        //Event 
         output.textContent=salary.value;
     });
 });
+
 
 /**save() method to save data */
 const save = () =>{                                                 //save function to save the details
